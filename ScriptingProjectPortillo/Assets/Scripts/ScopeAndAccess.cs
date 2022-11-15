@@ -14,7 +14,7 @@ public class ScopeAndAccess : MonoBehaviour
     private AnotherClass myOtherClass;
 
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         alpha = 29;
@@ -24,7 +24,7 @@ public class ScopeAndAccess : MonoBehaviour
     }
 
 
-    void Example (int pens, int crayons)
+    void Example(int pens, int crayons)
     {
         int answer;
         answer = pens * crayons * alpha;
