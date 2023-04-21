@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnumScript : MonoBehaviour
 {
-    enum Direction { North, East, South, West}
+    enum Direction {North, East, South, West}
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,10 @@ public class EnumScript : MonoBehaviour
             dir = Direction.North;
         else if (dir == Direction.East)
             dir = Direction.West;
-        else if 
+        else if (dir == Direction.West)
+            dir = Direction.East;
+
+        return dir;
     }
     // Update is called once per frame
     void Update()
